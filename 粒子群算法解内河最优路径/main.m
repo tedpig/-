@@ -1,0 +1,13 @@
+clc;
+close;
+clear;
+global cost_value distance;
+path1=[21 7 8 9 10 11 12 18 23];
+path2=[22 12 18 23];
+path1=searchpath(21,23);
+path2=searchpath(22,23);
+path1=[path1,9];
+%distance=textread('distance1.txt');
+%cost_value=textread('cost_value.txt');
+%[cost,max_value] = fitness0(23,path1,1);
+Shownet(path1,path2);
